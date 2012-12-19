@@ -1,4 +1,15 @@
 Residence::Application.routes.draw do
+
+root :to => 'static_pages#home'
+  resources :properties
+
+
+  resources :users
+
+
+  resources :messages
+
+
   get "static_pages/home"
 
   get "static_pages/aboutUs"

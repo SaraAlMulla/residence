@@ -1,2 +1,14 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+
+<% provide(:title, 'Home') %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ResidenceQatalogue | <%= yield(:title) %></title>
+  </head>
+  <body>
+    <h1>Residence Catalogue</h1>
+	<p>
+	The Ministry of Labor has (finally) decided to respond to the problem of finding a residence in Qatar, for both short term and long term visitors to the country. As such, it has commissioned you to create a Residence Qatalogue: a listing (that allows entry, editing and deletion) of residences in Doha. It should also allow users to sign in to accomplish these tasks and also send each other messages. Lastly, the system should allow the owner of a property to transfer ownership of a property, and to assign a manager. 
+	</p>
+  </body>
+</html>
